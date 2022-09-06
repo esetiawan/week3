@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingLeft="5dp"
     android:paddingTop="5dp"
@@ -68,6 +69,7 @@
         android:layout_gravity="center_horizontal"
         android:text="Add"
         android:textAlignment="center" />
+
     <TextView
         android:id="@+id/textViewDaftar"
         android:layout_width="wrap_content"
@@ -75,12 +77,36 @@
         android:layout_weight="1"
         android:text=""
         android:textAlignment="textEnd" />
+
     <EditText
         android:id="@+id/txtHasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="7"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Load" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Clear" />
+    </LinearLayout>
 
 </LinearLayout>
